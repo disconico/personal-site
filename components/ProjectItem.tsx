@@ -1,13 +1,14 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
 type Props = {
-	image: string;
+	image: StaticImageData;
 	title: string;
 	techs: string[];
 	description: string;
 	codeLink: string;
 	liveLink: string;
+	isPublished: boolean;
 };
 
 const ProjectItem = ({
@@ -17,34 +18,45 @@ const ProjectItem = ({
 	description,
 	codeLink,
 	liveLink,
+	isPublished,
 }: Props) => {
 	return (
-		<div className='max-w-lg mx-auto mb-12'>
-			<Image
-				src={image}
-				alt={title}
-				width={800}
-				height={800}
-				className='rounded-lg shadow-lg mb-4'
-			/>
+		<div className=' mx-auto  font-WorkSans  tracking-tight flex flex-col lg:flex-row py-4  gap-2 md:gap-4 lg:gap-6'>
+			<div className='w-full lg:w-3/5'>
+				<Image
+					src={image}
+					alt={title}
+					width={800}
+					height={800}
+					className='rounded-lg shadow-lg '
+				/>
+			</div>
+			<div className='w-full lg:w-2/5'>
+				<h3 className='text-2xl font-semibold mb-2'>{title}</h3>
+				<p className='text-gray-500 mb-2 italic'>{techs.join(', ')}</p>
+				{description.split('\n').map((paragraph, index) => (
+					<p key={index} className='text-gray-700 mb-4'>
+						{paragraph}
+						<br />
+					</p>
+				))}
 
-			<div className='bg-white rounded-lg shadow-lg p-4'>
-				<h3 className='text-xl font-semibold mb-2'>{title}</h3>
-				<p className='text-gray-600 mb-4'>{techs.join(', ')}</p>
-				<p className='text-gray-700 mb-4'>{description}</p>
-
-				<div className='flex justify-between'>
-					<Link href={codeLink}>
-						<a className='bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg mr-2'>
-							View code
-						</a>
+				<div className='flex items-end gap-4'>
+					<Link
+						href={codeLink}
+						className='border-b border-slate-500 hover:border-b-0 '
+					>
+						View code
 					</Link>
 
-					<Link href={liveLink}>
-						<a className='bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg'>
+					{isPublished && (
+						<Link
+							href={liveLink}
+							className='border-b border-slate-500 hover:border-b-0 '
+						>
 							Visit website
-						</a>
-					</Link>
+						</Link>
+					)}
 				</div>
 			</div>
 		</div>

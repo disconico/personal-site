@@ -35,3 +35,15 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+
+.underline--magical {
+	background-image: linear-gradient(120deg, #f7d06b 0%, #f39e71 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 0.2em;
+	background-position: 0 88%;
+	transition: background-size 0.25s ease-in;
+}
+
+.underline--magical:hover {
+	background-size: 100% 88%;
+}
