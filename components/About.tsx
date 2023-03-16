@@ -15,7 +15,7 @@ const About = ({ aboutRef }: Props) => {
 						<span className='underline--magical'>Nicolas</span> and I&apos;m a
 						29-year-old Frenchman currently living in Paris. I graduated from
 						Grenoble Ecole de Management (<span>GEM</span>) and spent a year in
-						Taiwan where I also completed an iMBA program specializing in
+						Taiwan where I also completed an iMBA program specializing in{' '}
 						<span>entrepreneurship</span>.
 					</p>
 					<br />
