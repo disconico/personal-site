@@ -66,7 +66,7 @@ const Hero = ({ homeRef }: Props) => {
 							</div>
 							<div className='flex items-end text-lg md:text-xl'>
 								<Link
-									href='/nicolas_guerin_resume.pdf'
+									href='/CV_NICOLAS_GUERIN_2023.pdf'
 									target={'_blank'}
 									className='border-b-2 border-slate-700 hover:border-b-0 flex gap-2 items-center'
 								>

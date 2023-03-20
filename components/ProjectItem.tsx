@@ -53,6 +53,7 @@ const ProjectItem = ({
 						<Link
 							href={liveLink}
 							className='border-b border-slate-500 hover:border-b-0 '
+							target='_blank'
 						>
 							Visit website
 						</Link>

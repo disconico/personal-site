@@ -20,8 +20,8 @@ const projects = [
 		description: `DiscoNetwork is a high-performance social networking platform developed using Next.js, React-Query, and TypeScript, with an intuitive front-end design using TailwindCSS.
 		The project also features secure user authentication with Next-Auth and a flexible NoSQL database with MongoDB. Media file management is handled by the powerful Cloudinary platform, ensuring fast and efficient processing. 
 		DiscoNetwork showcases my skills in developing responsive and scalable web applications using modern technologies.`,
-		codeLink: '/asda',
-		liveLink: '/asda',
+		codeLink: 'https://github.com/disconico/next-social-network',
+		liveLink: 'https://disconetwork.xyz',
 		isPublished: true,
 	},
 	{
@@ -31,8 +31,8 @@ const projects = [
 		description: `	Portfolio is a modern React single-page application showcasing my web development expertise. It features a range of projects built during my self-study journey, ranging from simple landing pages to complex web applications.
 		Designed with plain CSS, the application is minimalist, fast, and responsive, providing an optimal viewing experience across different devices.
 		This portfolio offers recruiters the chance to browse my projects and gain insight into my web development skills, including attention to detail and high-quality work, building user-friendly applications with modern technologies.`,
-		codeLink: '/asda',
-		liveLink: '/asda',
+		codeLink: 'https://github.com/disconico/portfolio',
+		liveLink: 'https://disconico.xyz/',
 		isPublished: true,
 	},
 	{
@@ -42,8 +42,8 @@ const projects = [
 		description: `BeautyPlants is an e-commerce website template developed using modern web development technologies and showcases my skills in building responsive and user-friendly e-commerce websites. The front-end is built using React Hooks, and Context, with PropTypes and Custom Hooks used to simplify the development process. 
 		The application also uses React Router to provide a seamless browsing experience for users and Custom Helper Functions to optimize performance. I also implemented a Reducer for async checkout mocking. 
 		Overall, BeautyPlants highlights my expertise in developing high-quality e-commerce websites using React and modern web development technologies .`,
-		codeLink: '/asda',
-		liveLink: '/asda',
+		codeLink: 'https://github.com/disconico/shopping_cart',
+		liveLink: 'https://disconico.github.io/shopping_cart/',
 		isPublished: true,
 	},
 ];
